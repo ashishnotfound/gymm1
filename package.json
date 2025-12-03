@@ -1,0 +1,23 @@
+{
+  "name": "apex-fitness-website",
+  "version": "1.0.0",
+  "description": "Apex Fitness - Premium Gym & Training Center Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Build complete - static site ready for deployment'",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "fitness",
+    "gym",
+    "health",
+    "wellness",
+    "training",
+    "static-site"
+  ],
+  "author": "Apex Fitness Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
