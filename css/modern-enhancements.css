@@ -1,0 +1,196 @@
+/* Modern Enhancements for Apex Fitness */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced animations */
+.cs-item:hover span {
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+}
+
+/* Better card hover effects */
+.class-item:hover .ci-pic img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.class-item .ci-pic {
+    overflow: hidden;
+}
+
+/* Enhanced pricing cards */
+.ps-item {
+    backdrop-filter: blur(10px);
+    background: rgba(21, 21, 21, 0.8);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    transition: all 0.4s ease;
+}
+
+.ps-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+}
+
+/* Modern button enhancements */
+.primary-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.primary-btn:hover::before {
+    left: 100%;
+}
+
+/* Enhanced navigation */
+.nav-menu ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Better hero section */
+.hs-slider .hs-item {
+    position: relative;
+}
+
+.hs-slider .hs-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    z-index: 1;
+}
+
+.hs-slider .hs-item .hi-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Modern footer */
+.footer-section {
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+    position: relative;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FF6B35, transparent);
+}
+
+/* Enhanced social icons */
+.fa-social a, .to-social a {
+    transition: all 0.3s ease;
+}
+
+.fa-social a:hover, .to-social a:hover {
+    color: #FF6B35;
+    transform: translateY(-3px);
+}
+
+/* Better typography */
+.section-title h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced gallery items */
+.gallery .gs-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gs-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.gallery .gs-item:hover::before {
+    opacity: 1;
+}
+
+/* Modern team cards */
+.ts-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.ts-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ts-item:hover::before {
+    opacity: 1;
+}
+
+/* Enhanced banner section */
+.banner-section {
+    position: relative;
+}
+
+.banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(255, 107, 53, 0.2) 100%);
+    z-index: 1;
+}
+
+.banner-section .bs-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .hs-slider .hs-item .hi-text h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .section-title h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+}
